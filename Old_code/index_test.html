@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<title>PamelaKaercher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="font-awesome.css">
+<!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+
+<style>
+
+</style>
+<body id="myPage"> <!--background="yosemite_tunnel_view_winter.jpg" alt="Yosemite" style="width:100%;min-height:350px;max-height:600px;"> -->
+<!--<body class="w3-light-grey w3-content" style="max-width:1600px">-->
+
+
+
+
+
+
+
+<!-- Sidebar on click -->
+<!--
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-indigo">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+-->
+
+<!-- Navbar -->
+<!--
+<ul>
+  <li><a href="#intro" class="active">Intro of Myself</a></li>
+  <li><a href="#experience">Experiece</a></li>
+  <li><a href="#interests">Interests</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+-->
+
+
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+ <!-- <a href="#" class="w3-bar-item w3-button w3-indigo"><i class="fa fa-home w3-margin-right"></i>Intro of Myself</a> -->
+  <a href="#intro" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Intro of Myself</a>
+  <a href="#experience" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Experience</a> 
+  <a href="#interests" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Interests</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Contact</a>
+ </div>
+ 
+
+  <!-- Navbar on small screens -->
+ <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium"> 
+    <a href="#intro" class="w3-bar-item w3-button">Intro of Myself</a>
+    <a href="#experience" class="w3-bar-item w3-button">Experience</a> 
+    <a href="#interests" class="w3-bar-item w3-button">Interests</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+
+<!-- Image Header -->
+<!--
+<div class="w3-display-container w3-animate-opacity">
+ <img src="yosemite_tunnel_view_winter.jpg" alt="Yosemite" style="width:100%;min-height:350px;max-height:600px;" > 
+ </div>
+ -->
+ 
+ <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+ <img class="header-picture" src="megan_me_snowdonia.jpg" alt="Snowdonia scramble">
+ <!-- <p class="w3-hover-dark-gray w3-hide">Photo by Mong-Han Huang</p> -->
+  <div class="w3-padding-large w3-center ">
+  <!--  <h1 class="w3-xlarge">SCIENTIST, CODER</h1> -->
+  <h1>Pamela Kaercher</h1>
+  <h3 class="w3-text-indigo";>SCIENTIST, CODER</h3>
+  </div>
+</header>
+
+	 
+ <!--
+  <img src="https://lh3.googleusercontent.com/7Q1wmqOM50dlmfPOXImN4Cx3rq7Z1tRn3kd0M57hxKuD7zOOi9dylkCxefHnvyWkBzdctu4XB9anYe8Ld5ZK6KftHs25UpFP4YyMSPO1KF3G98Ou_AaGJ6TNq7tmV2dR8Q039WiqcTRqJ4MWE5IUTiIoAJ07VJgafwVCqj4eJSZW_qqIAkmnh2BnIbgUc_eLgLnlGsalWr8bUL-eWaLbcFgWTzYpo7OhjO63JTC5gFixHS-9_O4N6VqLka9yr13uzuHadAjdkJddU_-ubDvdqfESJsw8wpQRqVBpbDX5JosBw8Bd_d4dRlgeDHMhUj11liX1ZNK96momtmo6vxR9_fc0SVJwOroV6BOiBwPP5zQouvRJCVJdxBHR6OySGTcEwyMpGJBHTdelm1yIb8H0AznwckvGOByosJ5w5fvO2wMh6pxbBnzUkzoRFv8XBM9pwCKHuH5vAsQYeei6wVt8R0a1hzozrwOWxCmxGCHN6byNrTQEzTwm1KFeusroouh9hrvUDnPvNaJ8T3r9gRUSTww45CUrR_V3J8Y75oHWkNQHqwsO3TjxWc-MxNOFhj47p5XR2IKCR2TqxhcHeFBYQRvj8Mo2qj4hnUajrBQONX84ly6N6GGBR-4-VKZJmZY=w717-h155-no" alt="Snowdon" style="width:100%;min-height:350px;max-height:600px;">
+   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-indigo" title="Go To W3.CSS">LEARN W3.CSS</button>
+  </div>
+  -->
+
+
+
+<!-- Modal -->
+<!-- LEAVE THIS IN WITH A TINY FERRET BUTTON AND THEN IF SOMEONE NOTICES IT AND CLICKS ON IT...  <p>My ferret, Gary, made this website for me.</p><br> -->
+<!--
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-indigo w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-indigo w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-indigo" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-indigo">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+-->
+
+
+<!-- Intro -->
+<div class="w3-row-padding w3-center w3-padding-64 experience-margin" id="intro">
+ <!--         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge w3-text-indigo"></i>Coder, Scientist</p> -->
+
+
+        <div class="w3-display-container" >
+          <img src="me_lost_coast_bw.jpg" style="width:30%; float: right" alt="me_lost_coast">
+         </div>
+		
+    
+    <p  class="w3-xlarge">I  always want to learn new things. </p><br>
+    <p>--</p><br>
+</div>
+
+
+
+<!-- Resume Section -->
+<!--
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+-->
+
+<!--<div class="w3-container w3-padding-64 w3-center" id="background"> -->
+
+<div class="w3-row-padding w3-main w3-light-grey" id="experience">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+
+     
+
+<div class="w3-container experience-margin">
+<div class="w3-row-padding w3-center w3-padding-64"><h2>EDUCATION</h2></div>
+
+<!--<div class="column side w3-light-grey">   
+
+	<div class="row" >
+             <h5 class="w3-opacity"><b>University of California, Berkeley</b></h5>
+             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - May 2014 </h6>
+	</div>
+		<div class="row" >
+             <h5 class="w3-opacity"><b>St. Olaf College</b></h5>
+             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2002 - May 2006 </h6>
+	</div>
+</div>
+
+   <div class="column middle w3-light-grey">
+   		<div class="row" >
+            <h5 class="w3-opacity"><b>PhD, Earth and Planetary Sciences</b></h5>
+			 <h6>Dissertation: Crystallographic preferred orientation and deformation of deep Earth minerals | Advisers: Hans-Rudolf Wenk, Burkard Militzer</h6>
+		</div>
+		<div class="row">
+			<h5 class="w3-opacity"><b>BA, Physics | BA, Mathematics</b></h5>
+		</div>
+   </div>
+  -->
+
+
+<div class="row"style="display: inline-block">
+   <div class="column side w3-light-grey">   
+             <h5 class="w3-opacity"><b>University of California, Berkeley</b></h5>
+             <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - May 2014 </h6>
+  </div>
+   <div class="column middle w3-light-grey">
+            <h5 class="w3-opacity"><b>PhD, Earth and Planetary Sciences</b></h5>
+			 <h6>Dissertation: Crystallographic preferred orientation and deformation of deep Earth minerals <br>
+			  Advisers: Hans-Rudolf Wenk, Burkard Militzer</h6>
+   </div>
+ </div>
+ 
+ 
+ <div class="row"style="display: inline-block">
+   <div class="column side w3-light-grey">   
+             <h5 class="w3-opacity"><b>Saint Olaf College</b></h5>
+             <h6 class="w3-text-indigo"><i class="fa-calendar fa-fw w3-margin-right"></i>Aug 2002 - May 2006 </h6>
+  </div>
+   <div class="column middle w3-light-grey">
+            <h5 class="w3-opacity"><b>BA Physics | BA Mathematics</b></h5>
+			 <h6>cum laude falalalalalal                           weiruoaadxma              weiostes</h6>
+   </div>
+ </div>
+ 
+
+<div class="w3-row-padding w3-center w3-padding-64"><h2>WORK EXPERIENCE</h2></div>
+
+
+<div class="row" style="display: inline-block">
+ <div class="column side w3-light-grey">   
+            <h5 class="w3-opacity"><b>New Orleans Police Department</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
+  </div>
+  <div class="column middle w3-light-grey">
+              <h5 class="w3-opacity"><b>Crime Analyst III </b></h5>
+             <h6>I write programs to automate data pulls and data cleaning from multiple data sources with Python and SQL and create dynamic reports in SSRS, Power BI, and Tableau.</h6>
+  </div>
+  <hr>
+</div>
+
+<div class="row" style="display: inline-block">
+  <div class="column side w3-light-grey">
+            <h5 class="w3-opacity"><b>University of Liverpool</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2014- June 2017</h6>
+  </div>
+  <div class="column middle w3-light-grey">
+              <h5 class="w3-opacity"><b>Postdoctoral Researcher </b></h5>
+              <h6>Sythesized mineral samples, deformed them in controlled experiments while precisely measuring stress and strain, and analyzed and fit that data using Python to create a model 
+		 		 to predict how neighborite deforms. To see which mechanism it  deforms by, I collected electron diffraction images and analyzed the images in Matlab.  </h6>
+  </div>
+</div>
+
+<div class="row" style="display: inline-block">
+  <div class="column side w3-light-grey">
+            <h5 class="w3-opacity"><b>University of California, Berkeley</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009- June 2014</h6>
+  </div>
+  <div class="column middle w3-light-grey">
+              <h5 class="w3-opacity"><b>Graduate Student Researcher and Instructor </b></h5>
+          <h6>I performed high pressure, high temperature deformation experiments at national synchrotron facilities and analyzed and interpreted the diffraction patterns I collected,
+		   calculated mineral elasticity using density functional theory, and presented my findings at international conferences and published them in 
+		  peer-reviewed scientific journals. As a graduate student instructor for four semesters in the  Earth and Planetary Science and Astronomy departments, I assisted on field trips,
+		   ran the observation telescope, lead discussion sections, helped write exams, and graded papers. In my own time I represented my department for the Society of Women in 
+		   Physical Sciences at Berkeley and participated in a mentoring program and outreach. </h6>
+  </div>
+</div>
+
+<div class="row" style="display: inline-block">
+  <div class="column side w3-light-grey">
+            <h5 class="w3-opacity"><b>Accenture</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2007- June 2009</h6>
+  </div>
+  <div class="column middle w3-light-grey">
+              <h5 class="w3-opacity"><b>Consulting Analyst </b></h5>
+ 				<h6>I maintained statistics, collected updates from department heads to track progress, and presented in client meetings. In one role, I tested IT systems before deployment.</h6>
+  </div>
+</div>
+
+
+<div class="row" style="display: inline-block">
+  <div class="column side w3-light-grey">
+            <h5 class="w3-opacity"><b>East China Normal University</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2006- June 2007</h6>
+  </div>
+  <div class="column middle w3-light-grey">
+              <h5 class="w3-opacity"><b>Oral English Teacher </b></h5>
+ 				<h6> I taught oral English to graduate students at East China Normal University as one of two fellows selected from St. Olaf College. 
+				I designed curriculum, planned lessons, and created my own material. On the side, I taught at a middle school and at an undergraduate nursing college and
+				 published monthly articles in a middle school English newspaper.</h6>
+  </div>
+</div>
+</div>
+<hr>
+
+  
+    <!-- End Right Column -->
+   </div>
+
+	
+	
+	
+<!-- SKILLZ-->
+	
+	<!-- Page Container -->
+<!-- <div class="w3-content w3-margin-top experience-margin" style="max-width:1400px;">  -->
+
+  <!-- The Grid -->
+<!-- <div class="w3-row-padding"> -->
+  
+    <!-- Left Column -->
+  <!--  <div class="w3-twothird"> -->
+    
+  <!--    <div class="w3-white w3-text-grey w3-card-4" style="padding:50px "> -->
+<!-- REMOVED PHOTO FROM HERE -->
+
+
+
+
+      <!--    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b></p> -->
+	  
+	  <!--		  
+	<div class="row" >
+    <div class="column side w3-light-grey">  <p>Skills</p></div>
+     <div class="column middle w3-light-grey"><p>Languages</p></div>
+  </div>	
+ 
+		  
+		  
+		  <div class="row" >
+    <div class="column side w3-light-grey">   
+        <p>Data Analysis</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:90%">90%</div>
+          </div>
+     </div>
+     <div class="column middle w3-light-grey">
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
+          </div>
+      </div>
+  </div>
+		  
+		  
+  
+          <p>Research</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Coding</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:75%">75%</div>
+          </div>
+          <p>Teaching</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Languages</b></p>
+
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:55%"></div>
+          </div>
+          <p>Matlab</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+-->
+    <!-- End Left Column -->
+  <!--  </div> -->
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+
+<!-- Interests-->
+<div class="w3-row-padding w3-center w3-padding-64" id="interests">
+<!-- <div class="w3-container w3-padding-64 w3-center" id="interests"> -->
+<h2>INTERESTS</h2>
+<!--<p>Meet the team - our office rats:</p> -->
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+	<a href="#" class="w3-bar-item w3-button w3-indigo"><i class="fa-python w3-margin-	right"></i>Coding</a>
+  <!--<img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Johnny Walker</h3>
+  <p>Web Designer</p> -->
+</div>
+
+<div class="w3-quarter">
+  <img src="diffraction_pattern.png" alt="Diffraction Pattern" style="width:45%" class="w3-circle w3-hover-opacity">
+  <!-- <img src="diffraction_pattern.png" alt="Diffraction Pattern" style="width:45%" class="w3-circle w3-hover-opacity"> -->
+   <h3>Mineral Physics</h3>
+   <a href="mineral_physics.html" class="w3-bar-item w3-button w3-indigo"><i class="fa-python w3-margin-	right"></i>Science</a>
+  <p>Beautiful Symmetry</p>
+   <!--         <p>Neighborite is the friendliest-sounding mineral that almost no one has heard of. However, it is a cousin/sister of the most abundant mineral in the Earth: bridgmanite.
+		  While deformation of bridgmanite (and therefore a large volume of the Earth) is very difficult to study experimentally, neighborite is much easier to work with.
+		  I sythesized neighborite, deformed it in controlled experiments while precisely measuring stress and strain, and analyzed and fit that data using Python to create a model 
+		  to predict how neighborite deforms, and extrapolate to slow (about the same speed your fingernails grow) deformation constantly happening in Earth's lower mantle.
+		   To see which mechanism it  deforms by, I collected electron diffraction images and analyzed the images in Matlab. </p> -->
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Giraffe Grid" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Doodling</h3>
+  <p>Doodle Gallery</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="Lake District" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Wilderness</h3>
+  <p>Favorite Places</p>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Projects -->
+<!--
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="projects">
+
+<div class="w3-quarter">
+<h2>Projects</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 3</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+</div>
+-->
+
+
+
+
+
+<footer class="w3-container w3-indigo w3-center w3-margin-top">
+       <p><i class="fa fa-home fa-fw w3-margin-right w3-xlarge w3-text-indigo"></i>New Orleans, LA</p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge w3-text-indigo"></i>pkaercher@gmail.com</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+</footer>
+
+
+
+
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-indigo"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+     
+
+<!-- Contact Container -->
+
+<!--
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-indigo w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-indigo w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-indigo w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-indigo w3-xlarge"></i>  test@test.com</p>
+    </div>
+-->
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-indigo w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
